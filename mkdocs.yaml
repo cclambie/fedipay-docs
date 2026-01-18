@@ -1,0 +1,61 @@
+site_name: FediPay Docs
+site_description: Documentation and specs for FediPay — federated patronage allocation for the fediverse.
+site_url: https://docs.fedipay.net/
+
+repo_name: cclambie/fedipay-docs
+repo_url: https://github.com/cclambie/fedipay-docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - toc.follow
+    - content.action.edit
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: teal
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Overview: getting-started.md
+      - For Users (Extension): users/extension.md
+      - For Operators (Server): operators/server.md
+  - Specs:
+      - Overview: specs/index.md
+      - Usage Events (v0): specs/usage-events-v0.md
+      - Ingest API (v0): specs/ingest-api-v0.md
+      - IDs & URNs (v0): specs/ids-and-urns-v0.md
+  - Roadmap: roadmap.md
+  - Community: community.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.highlight
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/cclambie/fedipay-docs
+    - icon: fontawesome/brands/mastodon
+      link: https://theforkiverse.com/@fedipay
